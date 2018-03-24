@@ -1,0 +1,61 @@
+package zad_3;
+
+import java.util.Scanner;
+
+public class zad_3 {
+
+	private static Scanner nr;
+	private static Scanner nr1;
+	private static Scanner nr2;
+
+	public static void main(String[] args) {
+
+
+		double a,b, d;
+		int c;
+		System.out.print(Wpisz liczbê ca³kowit¹ );
+		nr = new Scanner(System.in);
+		a = nr.nextDouble();
+		System.out.println(Wybierz operator);
+		System.out.println(1. +);
+		System.out.println(2. -);
+		System.out.println(3. );
+		System.out.println(4. );
+		nr1 = new Scanner(System.in);
+		c = nr1.nextInt();
+		System.out.print(Wpisz drug¹ liczbê ca³kowit¹ );
+		nr2 = new Scanner(System.in);
+		b = nr2.nextDouble();
+		
+		switch(c) {
+		case 1
+			d = a + b;
+			System.out.print(a +  +  + b +  =  + d);
+			break;
+		case 2
+			d = a - b;
+			System.out.print(a +  -  + b +  =  + d);
+			break;
+		case 3
+			d = a  b;
+			System.out.print(a +    + b +  =  + d);
+			break;
+		case 4
+			if(b == 0  a == 0)
+			{
+				System.out.print(Nie mo¿na dzieliæ przez 0!);
+				break;
+			}
+			else
+			{
+			d = a  b;
+			System.out.print(a +    + b +  =  + d);
+			break;
+			}
+		default
+			System.out.print(Nieprawid³owa operacja!);		
+		     break;
+		}
+	}
+
+}
