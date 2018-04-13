@@ -1,0 +1,27 @@
+package Lista_2_1;
+
+import java.util.Scanner;
+
+public class Lista_2_1 {
+	
+	private static Scanner wpisz;
+
+	public static void main(String[] args) {
+
+		int a, b= 2;
+		
+		System.out.print("Podaj licze calkowita dodatnia: ");
+		wpisz = new Scanner(System.in);
+		a = wpisz.nextInt();
+		if(a < 0)
+			System.out.println("Liczba jest ujemna !");
+		else
+		{
+			do {
+				System.out.print(b + ", ");
+				b = b*2;
+			}while(b <a);
+		}
+	}
+
+}
