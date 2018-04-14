@@ -1,0 +1,48 @@
+import java.util.Random;
+
+public class Zad_3 {
+
+	public static void main(String[] args) {
+
+		int[][] liczba = new int[10][10];
+		Random r = new Random();
+		int i = 0, j = 0;
+		//---------------------------
+		int max = 0;
+		int min = 9;
+		//---------------------------
+		
+		for(i = 0; i < liczba.length; i++)
+		{
+			for(j = 0; j < liczba[i].length; j++)
+			{
+				liczba[i][j] = r.nextInt(10);
+				System.out.print(liczba[i][j] + " ");
+			}
+			  System.out.println();
+		}
+		
+		for(i = 0; i < liczba.length; i++)
+		{
+			for(j = 0; j < liczba[i].length; j++)
+			{
+				if(j == 0)
+				{
+					min = liczba[i][j];
+					max = liczba[i][j];
+				}
+				else
+				{
+					if(liczba[i][j] < min)
+						min = liczba[i][j];
+					if(liczba[i][j] > max)
+						max = liczba[i][j];
+				}
+			}
+			System.out.print("min: "+ min + " ");
+			System.out.print("max: "+ max + "\n");
+			
+		}
+	}
+		
+}
