@@ -1,0 +1,13 @@
+public class Airfly {
+
+	private static int PORT = 8081;
+	private ServerSocket listener;
+
+	Public void init() throws Exception
+		System.out.println(“TalkServer is ….;
+		this.listener = new ServerSocket
+}
+	Public void mainLoop() throws Exception …
+		System.out.println(“Listen for ..”);
+		while(true) {
+			Socket connection = this.listener … ;
