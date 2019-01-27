@@ -1,5 +1,7 @@
 package zad5;
-
+/* ================== */
+/* JESZCZE NIE DZIA£A */
+/* ================== */
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
