@@ -12,6 +12,6 @@ public class zad_5 {
 		URL url = new URL("https://pl.wikipedia.org/wiki/Ma%C5%82pa_(znak_pisarski)");
 		BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream(), "UTF-8"));
 		String line;
-		while((line = in.readLine()) != null) if(line.contains("@"))System.out.println(in.readLine() + "\n");
+		while((line = in.readLine()) != null) if(line.contains("@"))System.out.println(line);
 }
 }
